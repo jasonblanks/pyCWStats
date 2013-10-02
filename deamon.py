@@ -232,8 +232,8 @@ class Server():
 							appliance = j[1]
 							try:
 								db2 = MySQLdb.connect(host=self.host+".ctecfts.com", # your host, usually localhost
-											user="esadbuser", # your username
-											passwd="esadbpassword", # your password
+											user="dbuser", # your username
+											passwd="password", # your password
 											db="esadb"+appliance) # name of the data base
 								cur3 = db2.cursor()
 								cur3.execute("""select * FROM t_indexstats""")
